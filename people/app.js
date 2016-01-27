@@ -1,3 +1,6 @@
+(function(){
+
+
 var app = angular.module('httpApp', ['ngResource']);
 
 /////////////////////////========CONTROLLER=======\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -20,3 +23,5 @@ app.controller('people', ['$scope', '$resource', function($scope, $resource){
 	 });
 
 }]);
+
+})();
