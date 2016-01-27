@@ -4,7 +4,7 @@
 	/////////////////////////========CONTROLLER=======\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	app.controller('people', function($scope, $resource){
 		$scope.peopleData = $resource(
-			'file:///C:/rails_projects/kennysandbox/angular_stuff/http_practice/people/data.json' 
+			'data.json' 
 		);
 
 	  $scope.peopleData.get().$promise.then(function(response) {
