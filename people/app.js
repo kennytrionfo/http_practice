@@ -1,4 +1,5 @@
 (function(){
+
 	var app = angular.module('httpApp', ['ngResource']);
 
 	/////////////////////////========CONTROLLER=======\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -9,7 +10,6 @@
 	 	  // console.log($scope.peopleInfo );
 	  });
 	}
-	
 	app.controller('PeopleCtrl', PeopleCtrl);
 
 })();
