@@ -4,8 +4,7 @@
 
 	/////////////////////////========CONTROLLER=======\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	function PeopleCtrl($scope, $resource){
-		$scope.peopleData = $resource('data.json');
-	  $scope.peopleData.get().$promise.then(function(response) {
+		$scope.peopleData = $resource('data.json').get().$promise.then(function(response) {
 	  	$scope.peopleInfo = response.records;
 	 	  // console.log($scope.peopleInfo );
 	  });
